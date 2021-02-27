@@ -28,8 +28,8 @@ const getPricingData = (data) => {
   );
 };
 
-$("form").on("submit", getMusicData);
+$("form").on("submit", getPricingData);
 
 const displayResults = () => {
-  $similarTo.text(pricingData.data.amount + userInput.toUpperCase());
+  $similarTo.text(pricingData.data.amount + " " + userInput.toUpperCase());
 };
