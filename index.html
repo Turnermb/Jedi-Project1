@@ -14,21 +14,30 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <h1>How Much Is a BitCoin Right Now?</h1>
-    <p id="blurb">
-      One fine February day our team of crack financial gurus set out to answer
-      one of life's greatest questions, "How much would a BitCoin cost me right
-      now?". Through the miracle of science, that question can be answered. All
-      you need to do is type in the currency code for your country. <br />
-      <br />
-      Let's get started, shall we?
-    </p>
-    <!-- <p id="bitcoinValue">BitCoin Value Shows Here!</p> -->
-    <form>
+    <header>
+      <h1>How Much Is a BitCoin Right Now?</h1>
+      <p id="blurb">
+        One fine February day our team of crack financial gurus set out to
+        answer one of life's greatest questions, "How much would a BitCoin cost
+        me right now?". Through the miracle of science, that question can be
+        answered. All you need to do is type in the currency code for your
+        country. <br />
+        <br />
+        Let's get started, shall we?
+      </p>
+    </header>
+    <form id="bitcoinForm">
       <p id="bitcoinValue">BitCoin Value Shows Here!</p>
-      <input type="text" placeholder="Currency Code Here" />
-      <input type="submit" value="Submit" />
+      <input id="bitcoinInput" type="text" placeholder="Currency Code Here" />
+      <input id="bitcoinSubmit" type="submit" value="Submit" />
     </form>
+    <div id="currencyDiv">
+      <form id="currencyForm">
+        <p id="currencyQuestion">What is the name of your currency?</p>
+        <input id="currencyInput" type="text" />
+        <input id="currencySubmit" type="submit" value="Submit" />
+      </form>
+    </div>
     <a href="#currencyDiv">What is my currency code?</a>
     <footer>Powered by CoinBase API</footer>
   </body>
