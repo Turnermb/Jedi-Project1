@@ -14,7 +14,7 @@ const getPricingData = (data) => {
     url:
       "https://api.coinbase.com/v2/prices/BTC-" +
       userInput.toUpperCase() +
-      "/buy",
+      "/spot",
   }).then(
     (data) => {
       pricingData = data;
