@@ -27,7 +27,7 @@ form {
 }
 
 footer {
-  color: royalblue;
+  color: steelblue;
   position: fixed;
   height: 50px;
   bottom: 0px;
@@ -36,7 +36,7 @@ footer {
   margin-bottom: 0px;
 }
 
-#currencyDiv {
+#currencyDisplay #currencyDiv {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -44,7 +44,7 @@ footer {
 
 #currencyDiv .currencyDivText {
   visibility: hidden;
-  width: 200px;
+  width: 380px;
   background-color: darkgray;
   color: whitesmoke;
   text-align: center;

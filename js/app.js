@@ -55,9 +55,15 @@ const displayResults = () => {
 // };
 
 const findCurrencies = () => {
+  $currency.empty();
   for (const [key, value] of Object.entries(currencyData)) {
-    if (`${value}`.toUpperCase() === currentInput.toUpperCase()) {
-      $currency.text(`${key}: ${value}`);
+    let valueString = `${value}`.toString();
+    // console.log(valueString.match(currentInput));
+    if (valueString.match(currentInput)) {
+      let newLi = document.createElement("li");
+      newLi = `${key}: ${value}`;
+      $currency.append(newLi);
+      //   $currency.text([`${key}: ${value}`]);
     }
   }
 };
