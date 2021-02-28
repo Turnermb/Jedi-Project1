@@ -59,9 +59,9 @@ const findCurrencies = () => {
   for (const [key, value] of Object.entries(currencyData)) {
     let valueString = `${value}`.toString();
     // console.log(valueString.match(currentInput));
-    if (valueString.match(currentInput)) {
+    if (valueString.toUpperCase().match(currentInput.toUpperCase())) {
       let newLi = document.createElement("li");
-      newLi = `${key}: ${value}`;
+      newLi = `${key}: ${value}` + "<br>";
       $currency.append(newLi);
       //   $currency.text([`${key}: ${value}`]);
     }

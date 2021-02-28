@@ -27,7 +27,7 @@ form {
 }
 
 footer {
-  color: steelblue;
+  color: cornflowerblue;
   position: fixed;
   height: 50px;
   bottom: 0px;
@@ -36,26 +36,30 @@ footer {
   margin-bottom: 0px;
 }
 
-#currencyDisplay #currencyDiv {
+#currencyQuestion {
+  font-size: 14px;
+}
+
+#currencyDiv {
   position: relative;
   display: inline-block;
-  cursor: pointer;
 }
 
 #currencyDiv .currencyDivText {
   visibility: hidden;
-  width: 380px;
+  font-size: 13px;
+  width: 500px;
+  max-height: 450px;
   background-color: darkgray;
   color: whitesmoke;
   text-align: center;
   border: 2px solid black;
   border-radius: 6px;
-  padding: 8px 0;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
+  bottom: -230px;
+  right: 135px;
+  margin: 0 auto;
 }
 
 #currencyDiv .currencyDivText::after {
@@ -71,6 +75,11 @@ footer {
 
 #currencyDiv .show {
   visibility: visible;
+}
+
+#currencyForm {
+  position: relative;
+  top: -49px;
 }
 
 #currencyButton {
