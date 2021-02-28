@@ -56,7 +56,6 @@ const displayResults = () => {
 
 const findCurrencies = () => {
   for (const [key, value] of Object.entries(currencyData)) {
-    console.log(currencyData);
     if (`${value}`.toUpperCase() === currentInput.toUpperCase()) {
       $currency.text(`${key}: ${value}`);
     }

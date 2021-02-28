@@ -3,11 +3,12 @@ body {
   margin: 0 auto;
   float: none;
   margin-bottom: 50px;
+  background-color: dimgray;
+  color: whitesmoke;
 }
 
 h1 {
   padding: 15px;
-  border: 2px solid black;
   max-width: 35%;
   margin: 0 auto;
 }
@@ -26,6 +27,7 @@ form {
 }
 
 footer {
+  color: royalblue;
   position: fixed;
   height: 50px;
   bottom: 0px;
@@ -42,10 +44,11 @@ footer {
 
 #currencyDiv .currencyDivText {
   visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
+  width: 200px;
+  background-color: darkgray;
+  color: whitesmoke;
   text-align: center;
+  border: 2px solid black;
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
@@ -68,4 +71,10 @@ footer {
 
 #currencyDiv .show {
   visibility: visible;
+}
+
+#currencyButton {
+  border: 2px solid black;
+  max-width: 15%;
+  margin: 0 auto;
 }

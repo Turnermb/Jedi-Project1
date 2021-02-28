@@ -34,8 +34,10 @@
     <div id="currencyDiv">
       <span class="currencyDivText" id="currencyDivPopup">
         <form id="currencyForm">
-          <p id="currencyDisplay">a</p>
-          <p id="currencyQuestion">Where are you from?</p>
+          <p id="currencyDisplay"></p>
+          <p id="currencyQuestion">
+            Which currency do you use? (ex. dollar, yuan, dinar)
+          </p>
           <input id="currencyInput" type="text" />
           <input id="currencySubmit" type="submit" value="Submit" />
         </form>
@@ -43,7 +45,7 @@
     </div>
     <div id="currencyFinder">
       <p>I don't know my currency code</p>
-      <p onclick="showHide()">Click Me</p>
+      <p id="currencyButton" onclick="showHide()">Click Me</p>
     </div>
     <footer>Powered by CoinBase API & Open Exchange Rates API</footer>
   </body>
