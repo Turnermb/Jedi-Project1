@@ -32,13 +32,19 @@
       <input id="bitcoinSubmit" type="submit" value="Submit" />
     </form>
     <div id="currencyDiv">
-      <form id="currencyForm">
-        <p id="currencyQuestion">What is the name of your currency?</p>
-        <input id="currencyInput" type="text" />
-        <input id="currencySubmit" type="submit" value="Submit" />
-      </form>
+      <span class="currencyDivText" id="currencyDivPopup">
+        <form id="currencyForm">
+          <p id="currencyDisplay">a</p>
+          <p id="currencyQuestion">Where are you from?</p>
+          <input id="currencyInput" type="text" />
+          <input id="currencySubmit" type="submit" value="Submit" />
+        </form>
+      </span>
     </div>
-    <a href="#currencyDiv">What is my currency code?</a>
-    <footer>Powered by CoinBase API</footer>
+    <div id="currencyFinder">
+      <p>I don't know my currency code</p>
+      <p onclick="showHide()">Click Me</p>
+    </div>
+    <footer>Powered by CoinBase API & Open Exchange Rates API</footer>
   </body>
 </html>

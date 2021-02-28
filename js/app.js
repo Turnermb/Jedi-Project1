@@ -1,11 +1,9 @@
-// 404003-MusicPic-HKGVIEYD
-// Access-Control-Allow-Origin: https://tastedive.com
 let userInput, pricingData;
 
-const $similarTo = $("#bitcoinValue");
+const $bitCoin = $("#bitcoinValue");
+const $currency = $("#currencyDisplay");
 const $input = $('input[type="text"]');
-
-// $("form").on("submit", getMusicData);
+const $currencyInput = $("#currencyInput");
 
 const getPricingData = (data) => {
   event.preventDefault();
@@ -28,8 +26,46 @@ const getPricingData = (data) => {
   );
 };
 
-$("form").on("submit", getPricingData);
+const getCurrencyData = (data) => {
+  event.preventDefault();
+  currentInput = $currencyInput.val();
+  console.log(currentInput);
+
+  $.ajax({
+    url: "https://openexchangerates.org/api/currencies.json",
+  }).then(
+    (data) => {
+      currencyData = data;
+      findCurrencies();
+    },
+    (error) => {
+      console.log("Invalid Request", error);
+    }
+  );
+};
+
+$("#bitcoinForm").on("submit", getPricingData);
 
 const displayResults = () => {
-  $similarTo.text(pricingData.data.amount + " " + userInput.toUpperCase());
+  $bitCoin.text(pricingData.data.amount + " " + userInput.toUpperCase());
+};
+
+// const displayCurrencies = () => {
+//   $currency.text(findCurrencies);
+// };
+
+const findCurrencies = () => {
+  for (const [key, value] of Object.entries(currencyData)) {
+    console.log(currencyData);
+    if (`${value}`.toUpperCase() === currentInput.toUpperCase()) {
+      $currency.text(`${key}: ${value}`);
+    }
+  }
+};
+
+$("#currencyForm").on("submit", getCurrencyData);
+
+const showHide = () => {
+  let popup = document.querySelector(".currencyDivText");
+  popup.classList.toggle("show");
 };
