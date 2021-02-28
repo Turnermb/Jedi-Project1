@@ -68,9 +68,9 @@ const findCurrencies = () => {
   }
 };
 
-$("#currencyForm").on("submit", getCurrencyData);
-
 const showHide = () => {
   let popup = document.querySelector(".currencyDivText");
   popup.classList.toggle("show");
 };
+
+$("#currencyForm").on("submit", getCurrencyData);
