@@ -34,6 +34,7 @@ footer {
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
+  float: ;
 }
 
 #currencyQuestion {
@@ -86,4 +87,54 @@ footer {
   border: 2px solid black;
   max-width: 15%;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 321px) {
+  h1 {
+    font-size: 22px;
+  }
+  #blurb {
+    font-size: 18px;
+  }
+  #currencyDiv .currencyDivText {
+    max-width: 320px;
+    font-size: 13px;
+    bottom: -590px;
+    left: -150px;
+  }
+}
+
+@media only screen and (max-width: 569px) {
+  h1 {
+    font-size: 22px;
+  }
+  #blurb {
+    font-size: 18px;
+  }
+  #currencyDiv .currencyDivText {
+    max-width: 569px;
+    bottom: -590px;
+    left: -255px;
+  }
+}
+@media only screen and (max-width: 813px) {
+  h1 {
+    font-size: 22px;
+  }
+  #blurb {
+    font-size: 18px;
+  }
+  #currencyDiv .currencyDivText {
+    max-width: 812px;
+    bottom: -590px;
+    left: -255px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #currencyDiv .currencyDivText {
+    max-width: 1024px;
+    bottom: -590px;
+    left: -255px;
+  }
 }

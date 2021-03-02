@@ -39,5 +39,6 @@ The challenge I faced when working with this API was trying to figure out how I 
 
 ## To-Do List
 
+- Accessibility modes.
 - Click anywhere to clear popup instead of only button (unsure of necessity).
 - See about fixing entire database populating when popup search box is submitted while empty.
