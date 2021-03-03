@@ -3,8 +3,8 @@ body {
   margin: 0 auto;
   float: none;
   margin-bottom: 50px;
-  background-color: dimgray;
   color: whitesmoke;
+  background-image: url(../2831582.jpg);
 }
 
 h1 {
@@ -57,7 +57,8 @@ footer {
   border-radius: 6px;
   position: absolute;
   z-index: 1;
-  bottom: -230px;
+  /* bottom: -230px; */
+  top: -225px;
   right: 135px;
   margin: 0 auto;
 }
@@ -98,7 +99,7 @@ footer {
   #currencyDiv .currencyDivText {
     max-width: 320px;
     font-size: 13px;
-    bottom: -590px;
+    top: 125px;
     left: -150px;
   }
 }
@@ -112,7 +113,7 @@ footer {
   }
   #currencyDiv .currencyDivText {
     max-width: 569px;
-    bottom: -590px;
+    top: 125px;
     left: -255px;
   }
 }
@@ -125,7 +126,7 @@ footer {
   }
   #currencyDiv .currencyDivText {
     max-width: 812px;
-    bottom: -590px;
+    top: 125px;
     left: -255px;
   }
 }
@@ -133,7 +134,7 @@ footer {
 @media only screen and (max-width: 1024px) {
   #currencyDiv .currencyDivText {
     max-width: 1024px;
-    bottom: -590px;
+    top: 125px;
     left: -255px;
   }
 }
