@@ -4,7 +4,8 @@ body {
   float: none;
   margin-bottom: 50px;
   color: whitesmoke;
-  background-image: url(../2831582.jpg);
+  background-image: url("../gray-painted-background_53876-94041.jpg");
+  background-size: 100%;
 }
 
 h1 {
@@ -27,7 +28,7 @@ form {
 }
 
 footer {
-  color: cornflowerblue;
+  color: skyblue;
   position: fixed;
   height: 50px;
   bottom: 0px;
