@@ -50,20 +50,14 @@ const displayResults = () => {
   $bitCoin.text(pricingData.data.amount + " " + userInput.toUpperCase());
 };
 
-// const displayCurrencies = () => {
-//   $currency.text(findCurrencies);
-// };
-
 const findCurrencies = () => {
   $currency.empty();
   for (const [key, value] of Object.entries(currencyData)) {
     let valueString = `${value}`.toString();
-    // console.log(valueString.match(currentInput));
     if (valueString.toUpperCase().match(currentInput.toUpperCase())) {
       let newLi = document.createElement("li");
       newLi = `${key}: ${value}` + "<br>";
       $currency.append(newLi);
-      //   $currency.text([`${key}: ${value}`]);
     }
   }
 };

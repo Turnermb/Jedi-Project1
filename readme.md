@@ -2,7 +2,7 @@
 
 ---
 
-With the recent uptick in awareness of crypto currency in the public trading space. I wanted to build a tool that would give the price for the most well known of them; BitCoin. Luckily, CoinBase provides an API that does just that, along with many other features that I wasn't able to take advantage of at this time.
+With the recent uptick in awareness of crypto currency in the public trading space. I wanted to build a tool that would give the price for the most well known of them; BitCoin. Luckily, CoinBase provides an API that does just that, along with many other features that I decided not to take advantage of at this time.
 
 ## CoinBase API documentation
 
@@ -12,14 +12,16 @@ https://developers.coinbase.com/api/v2#prices
 
 This documentation goes over the basics of making a call to the CoinBase server as well as some other functions that I haven't added at this time.
 
-For this project I decided to use the spot price, which shows the current market price for one BitCoin. Though it's only acurate for seconds at a time, I felt like it would give at the very least a general idea of what the going rate was. The spot price can also show prices for specific dates, though that feature has yet to be implemented.
-
 Including:
 
 - Sell Price: The current selling rate for one BitCoin or Ether (with the CoinBase 1% fee)
 - Buy Price: The current buying rate for one BitCoin or Ether (with the CoinBase 1% fee)
 - Exchange Rates: Lists exchange rates between other currencies. I did wind up using a different one for reasons I'll get into later.
 - Time: Retrieves the server time.
+
+For this project I decided to use the spot price, which shows the current market price for one BitCoin. Though it's only acurate for seconds at a time, I felt like it would give at the very least a general idea of what the going rate was. The spot price can also show prices for specific dates, though that feature has yet to be implemented.
+
+As far as implementation goes, this API wasn't difficult to work with. For the most part it's just an API call with CSS to spice it up.
 
 ---
 
