@@ -2,6 +2,12 @@
 
 ---
 
+Live link:
+
+```
+https://jedi-project1.vercel.app/
+```
+
 With the recent uptick in awareness of crypto currency in the public trading space. I wanted to build a tool that would give the price for the most well known of them; BitCoin. Luckily, CoinBase provides an API that does just that, along with many other features that I decided not to take advantage of at this time.
 
 ## CoinBase API documentation
